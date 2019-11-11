@@ -1,0 +1,35 @@
+version: '3.4'
+
+services:
+  accountapi:
+    image: ${DOCKER_REGISTRY-}accountapi
+    build:
+      context: .
+      dockerfile: AccountAPI/Dockerfile
+
+  chequebookapi:
+    image: ${DOCKER_REGISTRY-}chequebookapi
+    build:
+      context: .
+      dockerfile: ChequeBookAPI/Dockerfile
+
+
+  customerapi:
+    image: ${DOCKER_REGISTRY-}customerapi
+    build:
+      context: .
+      dockerfile: CustomerAPI/Dockerfile
+
+
+  transactionapi:
+    image: ${DOCKER_REGISTRY-}transactionapi
+    build:
+      context: .
+      dockerfile: TransactionAPI/Dockerfile
+
+
+  gateway:
+    image: ${DOCKER_REGISTRY-}gateway
+    build:
+      context: .
+      dockerfile: Gateway/Dockerfile
