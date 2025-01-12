@@ -25,22 +25,18 @@ namespace AccountAPI.Controllers
         }
 
         /// <summary>
-        /// Creates a new account
+        /// Creates a new accounerete
         /// </summary>
         /// <param name="accountDetails">The account details</param>
         /// <returns>Message</returns>
         [HttpPost]
         public string Post([FromBody] string accountDetails)
         {
-            return "New Account Created with account no:= " + Guid.NewGuid();
+            return "New Accoaunt Created with account no:= " + Guid.NewGuid();
         }
 
-        /// <summary>
-        /// Update account details
-        /// </summary>
-        /// <param name="accountNo">The account no.</param>
-        /// <param name="accountDetails">The account details.</param>
-        /// <returns></returns>
+        
+
         [HttpPut("{accountNo}")]
         public string  Put(int accountNo, [FromBody] string accountDetails)
         {
