@@ -16,6 +16,7 @@ namespace AccountAPI.Controllers
         public AccountController(IOptions<ConfigSettings> settings)
         {
             configSettings = settings.Value;
+            
         }
 
         [HttpGet]
