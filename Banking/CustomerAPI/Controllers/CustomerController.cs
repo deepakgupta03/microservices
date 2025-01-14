@@ -28,7 +28,6 @@ namespace CustomerAPI.Controllers
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
-          string TEst="abc";
             return "Customer Details";
         }
     
