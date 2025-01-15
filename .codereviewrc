@@ -1,0 +1,5 @@
+{
+  "maxLineLength": 120,
+  "forbiddenWords": ["accountDetails", "accountNo"],
+  "requireJSDoc": true
+}
