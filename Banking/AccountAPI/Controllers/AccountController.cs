@@ -58,9 +58,9 @@ namespace AccountAPI.Controllers
         }
 
         /// <summary>
-        /// Return accounts linked with userId
+        /// Return accounts linked with userId.
         /// </summary>
-        /// <param name="userId"></param>
+        /// <param name="userId">The userId</param>
         /// <returns>The list of account numbers</returns>
         [HttpPost]
         [Route("useraccounts")]
