@@ -1,5 +1,5 @@
 {
   "maxLineLength": 120,
-  "allowedWords": ["param", "userId"],
+  "allowedWords": ["param","Transer"],
   "requireJSDoc": true
 }
